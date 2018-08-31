@@ -38,6 +38,20 @@ public class HomeTests extends BaseTest {
 	}
 	
 	@Test
+	public void logValidation2(){
+		log.info("This is an info log");
+		log.warn("this is a warning log");
+		log.error("this is a error log");
+	}
+	
+	@Test
+	public void logValidation3(){
+		log.info("This is an info log");
+		log.warn("this is a warning log");
+		log.error("this is a error log");
+	}
+	
+	@Test
 	public void verify_data() throws Exception{
 		DataUtility.setExcelFile();
 		//System.out.println("===================="+DataUtility.setExcelFile());
