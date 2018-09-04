@@ -51,7 +51,7 @@ public class HomeTests extends BaseTest {
 		log.error("this is a error log");
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void verify_data() throws Exception{
 		DataUtility.setExcelFile();
 		//System.out.println("===================="+DataUtility.setExcelFile());
@@ -69,7 +69,7 @@ public class HomeTests extends BaseTest {
 		
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	@Parameters({ "hotelLocation" , "results"})
 	public void verify_parameter(String Location, String ExpectedResult) throws Exception {
 		log.info(" Test case Started");
